@@ -1,0 +1,32 @@
+Maths Problems
+
+1)  Implement prime number with O(sqrt(N)) time complexity
+Hint: Max boundary of prime numbers is sqrt(N)
+_________________________________________________________________________________________________
+
+1D Array Problems
+1) Given a string A of lower case characters "abcgagg", Find how many subsequence of string "ag" are present ??
+
+2) Complete Rotating array K times problem
+_________________________________________________________________________________________________
+
+2D Array Problems
+
+1) Rotate a 2D array by 90 degress
+_________________________________________________________________________________________________
+
+Hashing Problems
+
+1) Given an array of n integers, k integer. Count the no of pairs whose sum is divisible by k
+Hint: First take % k of all elements in array, later solve it with two sum approach (using hashing)
+- Desired time complexity -> O(n)
+(Basic Maths - 2)
+
+_________________________________________________________________________________________________
+
+Problem Solving - 5 (Discussed in class)
+
+1) Given 2 strings A & B. Find the count of all permutations of A present in B as substring.
+2) Given an Array of N integers. Minimize the difference between maximum & minimum.
+3) Given a integer N. Count the number of set bits from 1 to N.
+(Already solved in scaler assignment), Try approach taught in class too
