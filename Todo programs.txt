@@ -29,4 +29,25 @@ Problem Solving - 5 (Discussed in class)
 1) Given 2 strings A & B. Find the count of all permutations of A present in B as substring.
 2) Given an Array of N integers. Minimize the difference between maximum & minimum.
 3) Given a integer N. Count the number of set bits from 1 to N.
-(Already solved in scaler assignment), Try approach taught in class too
+(Already solved in scaler assignment), 
+Try approach taught in class too -> Dynamic programming (Recursion with memorization) & pattern
+
+_________________________________________________________________________________________________
+
+Problem Solving - 6 (Discussed in class)
+
+1) Revisit first question
+2) Given N bulbs with switches of state 0 or 1, If ith switch is toggled,
+it will toggle state of remaining j bulbs (j >= i)
+3) Given an Array A { 0, 1 } of size n & Q queries Q(L,R)
+First query should return XOR of elements from L,R
+Second query should return number of zeroes from L,R 
+4) Given a floor of dimensions of N * M
+Given square tiles of size a * a which need to cover floor with tiles
+& you're allowed more area than the floor. 
+But not allowed to break the tiles.
+Need to return min number of tiles required to cover all the floors.
+Answer -> ceil(MN/AA)
+5) Given an array of size N. Value of subarray is defined as Bitwise OR of all elements in the subarray. 
+Find the subarray of all elements. (Rewatch its explaination)
+(Homework - Will complete in next class)
