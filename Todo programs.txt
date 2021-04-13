@@ -24,6 +24,20 @@ Hint: First take % k of all elements in array, later solve it with two sum appro
 
 _________________________________________________________________________________________________
 
+Problem Solving - 4
+
+1) Find the majority element x in Array of length N 
+(Majority element -> Frequency(x) > N/2 - Only one majority can exists as N/2 is min frequency)
+Can be solved using Moore's voting algorithm
+-> Maintain candidate for M.E.(MajorElement), and candidate's frequency
+-> Reduce candidate's frequency whenever distinct element is encountered
+& Increment frequency whenever we come across similar element 
+-> Atlast a candidate will be left out, Verify if it is M.E. by traversing all the elements once again
+2) Given 3 primenumber. We need to regenerate first N number in series.
+Every number in the series having P1,P2,P3 as the divisors
+3) Find the submatrix sum query
+_________________________________________________________________________________________________
+
 Problem Solving - 5 (Discussed in class)
 
 1) Given 2 strings A & B. Find the count of all permutations of A present in B as substring.
@@ -51,3 +65,21 @@ Answer -> ceil(MN/AA)
 5) Given an array of size N. Value of subarray is defined as Bitwise OR of all elements in the subarray. 
 Find the subarray of all elements. (Rewatch its explaination)
 (Homework - Will complete in next class)
+_________________________________________________________________________________________________
+
+Problem Solving - 7 (Discussed in class)
+
+5) Given an array of size N. Value of subarray is defined as Bitwise OR of all elements in the subarray. 
+Find the sum(Bitwise of subarray) of all subarrays. (Rewatch its explaination) - Continuation of last class 
+
+1) Given an array of N integers, Value of subarray is sum of all elements.
+Find sum of all subarray. 
+Need to find out how many times each element in exists in subarrays -> ith = i * (n - i + 1)
+2) In Above question, subarray could be replaced as Subset 
+3) Hotel booking 
+Given N advanced bookings & K rooms. Need to tell if you can accomdate them. 
+(Beggar problem technique need to be used)
+4) Finding duplicate rows in a binary matrix.
+Convert each row element into decimal(One solution)
+Using TRIE -> Data structure for better time complexity
+
