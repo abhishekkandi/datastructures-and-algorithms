@@ -7,24 +7,12 @@ public class App {
         int decimal = convertBinaryToDecimal(binarySequence);
         System.out.println("binarySequence: " + binarySequence + " decimal: " + decimal);
 
-        int decimalInput = 5;
+        int decimalInput = 110;
         String binarySequenceOutput = convertDecimalToBinary(decimalInput);
         System.out.println("decimal: " + decimalInput + " binarySequence: " + binarySequenceOutput);
-    }
 
-    private static String convertDecimalToBinary(int number){
-        List<Integer> binaryNumberList = new ArrayList<Integer>();
-        while(number != 0){
-            binaryNumberList.add(number % 2);//110 % 2 = 0
-            number /= 2;    
-        }
-
-        String binarySequence = "";
-        for(int i = binaryNumberList.size() -1; i >=0; i--){
-            binarySequence += binaryNumberList.get(i);
-        }
-
-        return binarySequence;
+        String binarySequenceOutput2 = convertNumberToBinary(decimalInput);
+        System.out.println("decimal: " + decimalInput + " binarySequence: " + binarySequenceOutput2);
     }
 
     /*
@@ -43,5 +31,37 @@ public class App {
         }
 
         return decimal;
+    }
+
+    /*
+        1st Method
+    */
+    private static String convertDecimalToBinary(int number){
+        List<Integer> binaryNumberList = new ArrayList<Integer>();
+        while(number != 0){
+            binaryNumberList.add(number % 2);//110 % 2 = 0
+            number /= 2;    
+        }
+
+        String binarySequence = "";
+        for(int i = binaryNumberList.size() -1; i >=0; i--){
+            binarySequence += binaryNumberList.get(i);
+        }
+
+        return binarySequence;
+    }
+
+    /*
+        Method - 2
+    */
+    private static String convertNumberToBinary(int number){
+
+        String binarySequence = "";
+        
+        for(int i = 31; i >= 0; i--){
+            binarySequence += ((1 << i) & number) > 0 ? 1 : 0;
+        }
+
+        return binarySequence;
     }
 }
