@@ -1,3 +1,5 @@
+/* Reference: https://java2blog.com/implement-singly-linked-list-in-java/ */
+
 public class App {
     public static void main(String[] args) throws Exception {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
